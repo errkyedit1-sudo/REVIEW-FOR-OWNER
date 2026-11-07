@@ -1,0 +1,491 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Copyright Disclaimer</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #eef2f8;
+    color: #253247;
+    padding: 20px 12px;
+}
+
+.wrapper {
+    max-width: 760px;
+    margin: 20px auto;
+    background: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 12px 40px rgba(15,35,65,.12);
+}
+
+/* HEADER */
+.hero {
+    background: linear-gradient(135deg,#101f3c,#173f70,#1769a7);
+    padding: 38px 22px;
+    text-align: center;
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero:before {
+    content: "";
+    position: absolute;
+    width: 220px;
+    height: 220px;
+    border: 1px solid rgba(255,255,255,.12);
+    border-radius: 50%;
+    top: -130px;
+    right: -50px;
+}
+
+.hero-icon {
+    width: 72px;
+    height: 72px;
+    padding: 15px;
+    border-radius: 19px;
+    background: rgba(255,255,255,.13);
+    border: 1px solid rgba(255,255,255,.2);
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-size: 30px;
+    font-weight: 900;
+    letter-spacing: .4px;
+}
+
+.hero p {
+    font-size: 16px;
+    line-height: 1.7;
+    color: #dbeafe;
+    margin-top: 9px;
+}
+
+/* MAIN CONTENT */
+.content {
+    padding: 30px;
+}
+
+.section-heading {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 20px;
+    color: #173e6b;
+}
+
+.section-heading svg {
+    width: 29px;
+    height: 29px;
+    flex-shrink: 0;
+    stroke: #1769b0;
+}
+
+.section-heading h2 {
+    font-size: 23px;
+    font-weight: 900;
+}
+
+.content p {
+    font-size: 18px;
+    line-height: 2;
+    color: #35445a;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+strong {
+    color: #173e6b;
+    font-weight: 900;
+}
+
+/* IMPORTANT NOTICE */
+.highlight-box {
+    background: linear-gradient(135deg,#fff8e9,#fff3d8);
+    border: 1px solid #f2d99c;
+    border-left: 5px solid #e6a323;
+    border-radius: 13px;
+    padding: 22px;
+    margin: 25px 0;
+}
+
+.highlight-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 19px;
+    font-weight: 900;
+    color: #95600b;
+    margin-bottom: 13px;
+}
+
+.highlight-title svg {
+    width: 25px;
+    height: 25px;
+    stroke: #c88915;
+    flex-shrink: 0;
+}
+
+.highlight-box p {
+    color: #69532c;
+    font-size: 18px;
+    line-height: 2;
+    margin: 0;
+}
+
+/* ENGLISH SECTION */
+.english-box {
+    margin-top: 35px;
+    padding-top: 27px;
+    border-top: 2px dashed #dce4ee;
+}
+
+.english-label {
+    display: inline-block;
+    background: #eaf3ff;
+    color: #1762a5;
+    padding: 10px 16px;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 900;
+    margin-bottom: 20px;
+    letter-spacing: .5px;
+}
+
+.english-box p {
+    font-size: 18px;
+    line-height: 2;
+    text-align: justify;
+}
+
+/* CONTACT SECTION */
+.contact {
+    background: linear-gradient(135deg,#101f3c,#174d80);
+    padding: 32px 20px;
+    text-align: center;
+    color: white;
+}
+
+.contact-icon {
+    width: 45px;
+    height: 45px;
+    margin-bottom: 12px;
+    stroke: #fff;
+}
+
+.contact h3 {
+    font-size: 23px;
+    font-weight: 900;
+    margin-bottom: 12px;
+}
+
+.contact p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #dbeafe;
+    margin-bottom: 20px;
+}
+
+.contact a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background: #fff;
+    color: #14528b;
+    text-decoration: none;
+    padding: 15px 25px;
+    border-radius: 10px;
+    font-size: 17px;
+    font-weight: 900;
+    box-shadow: 0 5px 15px rgba(0,0,0,.15);
+    transition: .2s;
+}
+
+.contact a:hover {
+    transform: translateY(-2px);
+    background: #eaf4ff;
+}
+
+.contact a svg {
+    width: 22px;
+    height: 22px;
+    stroke: currentColor;
+}
+
+/* FOOTER */
+.footer {
+    background: #f7f9fc;
+    text-align: center;
+    padding: 20px 12px;
+    color: #75849a;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.footer span {
+    color: #e65d6b;
+}
+
+/* MOBILE RESPONSIVE */
+@media(max-width:480px) {
+
+    body {
+        padding: 10px;
+    }
+
+    .wrapper {
+        margin: 10px auto;
+        border-radius: 16px;
+    }
+
+    .hero {
+        padding: 30px 16px;
+    }
+
+    .hero-icon {
+        width: 65px;
+        height: 65px;
+    }
+
+    .hero h1 {
+        font-size: 25px;
+    }
+
+    .hero p {
+        font-size: 14px;
+    }
+
+    .content {
+        padding: 22px 18px;
+    }
+
+    .section-heading h2 {
+        font-size: 21px;
+    }
+
+    .section-heading svg {
+        width: 26px;
+        height: 26px;
+    }
+
+    .content p,
+    .highlight-box p,
+    .english-box p {
+        font-size: 17px;
+        line-height: 1.95;
+    }
+
+    .highlight-box {
+        padding: 18px;
+    }
+
+    .highlight-title {
+        font-size: 18px;
+    }
+
+    .english-label {
+        font-size: 13px;
+    }
+
+    .contact {
+        padding: 28px 16px;
+    }
+
+    .contact h3 {
+        font-size: 21px;
+    }
+
+    .contact p {
+        font-size: 15px;
+    }
+
+    .contact a {
+        font-size: 16px;
+        padding: 14px 19px;
+    }
+
+    .footer {
+        font-size: 13px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="wrapper">
+
+    <!-- PREMIUM HEADER -->
+    <header class="hero">
+
+        <svg class="hero-icon" viewBox="0 0 24 24"
+             fill="none" stroke="white" stroke-width="1.7"
+             stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 22s8-4 8-11V5l-8-3-8 3v6c0 7 8 11 8 11z"/>
+            <path d="M9 12l2 2 4-4"/>
+        </svg>
+
+        <h1>Copyright Disclaimer</h1>
+        <p>Important Notice • Copyright & Intellectual Property Rights</p>
+
+    </header>
+
+    <main class="content">
+
+        <!-- HINDI DISCLAIMER -->
+
+        <div class="section-heading">
+
+            <svg viewBox="0 0 24 24" fill="none"
+                 stroke="currentColor" stroke-width="2"
+                 stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
+                <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
+                <path d="M8 7h8M8 11h6"/>
+            </svg>
+
+            <h2>कॉपीराइट एवं डिस्क्लेमर</h2>
+
+        </div>
+
+        <p>
+            इस चैनल पर उपलब्ध सभी
+            <strong>पुस्तकें, E-Books एवं Study Notes</strong>
+            इंटरनेट पर पहले से सार्वजनिक रूप से उपलब्ध विभिन्न
+            वेबसाइटों एवं सोशल मीडिया प्लेटफॉर्म्स से प्राप्त किए गए हैं।
+        </p>
+
+        <p>
+            हम यह स्पष्ट करना चाहते हैं कि हमारा उद्देश्य किसी भी
+            <strong>लेखक, प्रकाशक या Copyright Owner</strong> के अधिकारों
+            का उल्लंघन करना नहीं है। हमने केवल विद्यार्थियों की सुविधा
+            के लिए इंटरनेट पर पहले से उपलब्ध इन शैक्षणिक सामग्रियों
+            के लिंक को एक ही स्थान पर व्यवस्थित रूप से उपलब्ध कराने
+            का प्रयास किया है, ताकि छात्रों को अपनी पढ़ाई के लिए
+            आवश्यक सामग्री आसानी से मिल सके।
+        </p>
+
+        <!-- COPYRIGHT NOTICE -->
+
+        <div class="highlight-box">
+
+            <div class="highlight-title">
+
+                <svg viewBox="0 0 24 24" fill="none"
+                     stroke="currentColor" stroke-width="2"
+                     stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 9v4"/>
+                    <path d="M12 17h.01"/>
+                    <circle cx="12" cy="12" r="10"/>
+                </svg>
+
+                महत्वपूर्ण सूचना
+
+            </div>
+
+            <p>
+                यदि किसी <strong>लेखक, प्रकाशक या Copyright Owner</strong>
+                को हमारी इस पहल से कोई आपत्ति है, अथवा उन्हें लगता है
+                कि उनकी कोई पुस्तक, E-Book या Notes इस चैनल पर उनकी
+                अनुमति के बिना उपलब्ध हैं, तो कृपया हमसे संपर्क करें।
+                आपकी शिकायत प्राप्त होने पर संबंधित सामग्री की
+                समीक्षा की जाएगी और आवश्यकतानुसार उसे
+                <strong>तुरंत चैनल से हटा दिया जाएगा।</strong>
+            </p>
+
+        </div>
+
+        <!-- ENGLISH DISCLAIMER -->
+
+        <div class="english-box">
+
+            <div class="english-label">
+                ENGLISH COPYRIGHT DISCLAIMER
+            </div>
+
+            <p>
+                All books, e-books, and study materials shared on this
+                channel are sourced from publicly available websites
+                and social media platforms on the internet.
+            </p>
+
+            <p>
+                Our intention is solely to make educational resources
+                easily accessible to students by collecting and
+                organizing their links in one place. We do not intend
+                to violate or infringe upon the copyrights or
+                intellectual property rights of any
+                <strong>author, publisher, or copyright owner.</strong>
+            </p>
+
+            <p>
+                If any author, publisher, or copyright owner has any
+                objection to their material being shared on this
+                platform, please contact us. We will review your
+                request and take the necessary action, including
+                <strong>removing the concerned files immediately
+                where appropriate.</strong>
+            </p>
+
+        </div>
+
+    </main>
+
+    <!-- CONTACT SECTION -->
+
+    <section class="contact">
+
+        <svg class="contact-icon" viewBox="0 0 24 24"
+             fill="none" stroke="currentColor" stroke-width="1.8"
+             stroke-linecap="round" stroke-linejoin="round">
+            <path d="M22 2L11 13"/>
+            <path d="M22 2l-7 20-4-9-9-4 20-7z"/>
+        </svg>
+
+        <h3>Copyright-Related Issues?</h3>
+
+        <p>
+            For any copyright concerns, complaints or removal requests,
+            please contact us.
+        </p>
+
+        <a href="https://t.me/helperofengineer_bot"
+           target="_blank" rel="noopener noreferrer">
+
+            <svg viewBox="0 0 24 24" fill="none"
+                 stroke="currentColor" stroke-width="2"
+                 stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 2L11 13"/>
+                <path d="M22 2l-7 20-4-9-9-4 20-7z"/>
+            </svg>
+
+            @helperofengineer_bot
+
+        </a>
+
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer class="footer">
+        Thank You for Your Understanding & Cooperation
+        <span>♥</span>
+    </footer>
+
+</div>
+
+</body>
+</html>
